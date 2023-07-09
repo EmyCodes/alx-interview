@@ -3,7 +3,7 @@ def canUnlockAll(boxes):
     """Determines whether all boxes can be unlocked or not.
 
     Args:
-        boxes (list): A list of lists 
+        boxes (list): A list of lists
         representing the boxes and their corresponding keys.
 
     Returns:
