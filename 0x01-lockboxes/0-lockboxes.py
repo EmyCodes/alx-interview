@@ -10,24 +10,24 @@ def canUnlockAll(boxes):
         bool: True if all boxes can be unlocked, False otherwise.
     """
 
-    # keys = [0]
-    # for key in keys:
-    #     for val in boxes[key]:
-    #         if val not in keys:
-    #             keys.append(val)
-    # if len(keys) == len(boxes):
-    #     return True
-    # return False
+    keys = [0]
+    for key in keys:
+        for val in boxes[key]:
+            if val not in keys:
+                keys.append(val)
+    if len(keys) == len(boxes):
+        return True
+    return False
 
-    num_boxes = len(boxes)
-    visited = [False] * num_boxes
-    visited[0] = True  # The first box is unlocked
-    keys = boxes[0]  # Start with the keys in the first box
+    # num_boxes = len(boxes)
+    # visited = [False] * num_boxes
+    # visited[0] = True  # The first box is unlocked
+    # keys = boxes[0]  # Start with the keys in the first box
 
-    while keys:
-        key = keys.pop(0)
-        if key < num_boxes and not visited[key]:
-            visited[key] = True
-            keys.extend(boxes[key])
+    # while keys:
+    #     key = keys.pop(0)
+    #     if key < num_boxes and not visited[key]:
+    #         visited[key] = True
+    #         keys.extend(boxes[key])
 
-    return all(visited)
+    # return all(visited)
