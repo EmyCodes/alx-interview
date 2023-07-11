@@ -23,4 +23,3 @@ def minOperations(n):
                 _max += 2
 
     return _times
-
