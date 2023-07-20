@@ -5,7 +5,7 @@ import sys
 
 
 def print_n(t_file_size, status):
-    """Prints total file size and status list"""
+    """Prints total file size and status list """
     print("File size: {:d}".format(t_file_size))
     for key, value in sorted(status.items()):
         if value != 0:
@@ -17,6 +17,7 @@ status = {'200': 0, '301': 0, '400': 0, '401': 0,
 
 t_file_size = 0
 count = 0
+# Handling error
 try:
     for line in sys.stdin:
         args = line.split()
@@ -40,3 +41,4 @@ except KeyboardInterrupt:
 
 finally:
     print_n(t_file_size, status)
+
