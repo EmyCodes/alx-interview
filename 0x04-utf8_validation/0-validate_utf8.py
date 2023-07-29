@@ -13,14 +13,16 @@ def validUTF8(data):
         UTF8_encoding = '08b'
         char = format(element, UTF8_encoding)
 
-        if char.startswith('0'):
-            continue
-        elif char.startswith('110'):
-            continue
-        elif char.startswith("1110"):
-            continue
-        elif char.startswith("11110"):
-            continue
+        if len(str(char)) == 8:
+            if char.startswith('0'):
+                continue
+            elif char.startswith('110'):
+                continue
+            elif char.startswith("1110"):
+                continue
+            elif char.startswith("11110"):
+                continue
         else:
             return False
-    return True
+    else:
+        return True
