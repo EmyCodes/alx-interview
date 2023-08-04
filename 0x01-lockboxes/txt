@@ -1,0 +1,9 @@
+    """Determines whether all boxes can be unlocked or not.
+
+    Args:
+        boxes (list): A list of lists
+        representing the boxes and their corresponding keys.
+
+    Returns:
+        bool: True if all boxes can be unlocked, False otherwise.
+    """
